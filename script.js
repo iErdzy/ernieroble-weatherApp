@@ -1,4 +1,4 @@
-const apiKey = "9dcd695633260785a9d79f7523032d50"; 
+const apiKey = "YOUR_API_KEY_HERE"; 
 const searchBtn = document.getElementById('search-btn');
 const cityInput = document.getElementById('city-input');
 const weatherInfo = document.getElementById('weather-info');
@@ -61,4 +61,5 @@ cityInput.addEventListener('keypress', (e) => {
         const city = cityInput.value.trim();
         if (city) getWeather(city);
     }
+
 });
