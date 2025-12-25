@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-card">
+        <h2 class="title">Weather Forecast</h2>
+        
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name..." autocomplete="off">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div id="error-msg" class="error-text"></div>
+
+        <div id="weather-info" class="weather-info hidden">
+            <h1 id="city-name">London</h1>
+            <img id="weather-icon" src="" alt="Weather Icon">
+            <p id="description">Clear Sky</p>
+            <div class="temp-display">
+                <span id="temperature">20</span>°C
+            </div>
+            
+            <div class="details">
+                <div class="col">
+                    <p>Humidity</p>
+                    <span id="humidity">50%</span>
+                </div>
+                <div class="col">
+                    <p>Wind Speed</p>
+                    <span id="wind">15 km/h</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
